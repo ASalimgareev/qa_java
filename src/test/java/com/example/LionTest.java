@@ -33,8 +33,7 @@ public class LionTest extends TestCase {
     @Before
     public void setup() throws Exception {
         MockitoAnnotations.initMocks(this);
-        lion = new Lion(sex);
-        lion.feline = feline;
+        lion = new Lion(feline, sex);
     }
 
     @Test
